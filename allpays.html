@@ -1,0 +1,1887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Les challenges Pays :</title>
+</head>
+<style>
+    body {
+        text-align: center;
+        background-color: #D2D580;
+    }
+
+    table {
+        margin: auto; /* Marge automatique pour centrer le tableau */
+        border-collapse: collapse; /* Pour fusionner les bordures de cellules */
+    }
+
+    th, td {
+        border: 1px solid black; /* Bordures de cellules */
+        padding: 6px; /* Espacement interne des cellules */
+        background-color: #EAEE92;
+    }
+
+    .under2000 {
+        background-color: #505050;
+        font-weight: bold;
+    }
+
+    .under3500 {
+        background-color: #990000;
+        font-weight: bold;
+    }
+
+    .under5000 {
+        background-color: #FF0000; 
+        font-weight: bold;
+    }
+
+    .under6500 {
+        background-color: orange; 
+        font-weight: bold;
+    }
+
+    .under8000 {
+        background-color: lightgreen; 
+        font-weight: bold;
+    }
+
+    .under9500 {
+        background-color: green; 
+        font-weight: bold;
+    }
+
+    .under10k {
+        background-color: #0080FF; 
+        font-weight: bold;
+    }
+
+    .num {
+    	background-color: #a0a0a0;
+    }
+
+    .date {
+    	background-color: #bbbbbb;
+    	font-style: italic;
+    }
+
+    .pays {
+    	background-color: #bbbbbb;
+    	font-weight: bold;
+    	text-align: left;
+    	padding-left: 10px;
+    }
+
+    .dist {
+    	background-color: #dddddd;
+    	text-align: right;
+    	padding-right: 10px;
+    }
+
+    .timeset {
+    	background-color: #bbbbbb;
+    }
+
+    .cid {
+    	background-color: #bbbbbb;
+    	text-align: left;
+    	padding-left: 10px;
+    }
+
+    .emptyScore {
+    	background-color: #404040;
+    }
+
+    .emptyPays {
+    	background-color: #707070;
+    	text-align: left;
+    	padding-left: 10px;
+    }
+
+    .empty {
+    	background-color: #707070;
+    }
+
+    .retour {
+    	color: black;
+    	font-weight: bold;
+    }
+
+    .upth {
+    	background-color: #999900;
+    	font-size: 20px;
+    	font-weight: bold;
+    }
+
+    .conti {
+    	background-color: #dddddd;
+    }
+
+    .tenta {
+    	background-color: #dddddd;
+    }
+
+</style>
+<body>
+<h3><a href="main.html" class="retour">[Retour]</a></h3>
+<h2>Liste des pays : </h2>
+<table border=1>
+<tr>
+    <th colspan="5" class="upth">Info Challenges</th>
+    <th colspan="5" class="upth">Kirin</th>
+    <th colspan="5" class="upth">Aexeos</th>
+</tr>
+<tr>
+    <th>Numero</th>
+    <th>Continent</th>
+    <th>Score Duo</th>
+    <th>Nb Tentative</th>
+    <th>Pays</th>
+    <th>ID</th>
+    <th>Date</th>
+    <th>Time Set</th>
+    <th>Distance</th>
+    <th>Score</th>
+    <th>Score</th>
+    <th>Distance</th>
+    <th>Time Set</th>
+    <th>Date</th>
+    <th>ID</th>
+</tr>
+<tr>
+    <td class="num">1</td>
+    <td class="conti">World</td>
+    <td class="under8000">35480</td>
+    <td class="tenta">2</td>
+    <td class="pays">World</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/5ey2cnpOrMFeh8OJ">Lien</a></td>
+    <td class="date">24 Janv. 2024 [21h53]</td>
+    <td class="timeset">180</td>
+    <td class="dist">9737.3 km</td>
+    <td class="under6500">14563</td>
+    <td class="under9500">20917</td>
+    <td class="dist">1622.8 km</td>
+    <td class="timeset">180</td>
+    <td class="date">24 Janv. 2024 [22h28]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/vum3OvIAL9oDiusF">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">2</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Albania</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">3</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Andorra</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">4</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Austria</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">5</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Belgium</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">6</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Bulgaria</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">7</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Croatia</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">8</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Czech Republic</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">9</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Denmark</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">10</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Estonia</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">11</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Faroe Islands</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">12</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Finland</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">13</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">France</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">14</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Germany</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">15</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Gibraltar</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">16</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Greece</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">17</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Hungary</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">18</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Iceland</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">19</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Ireland</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">20</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Isle Of Man</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">21</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Italy</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">22</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Jersey</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">23</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Latvia</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">24</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Lithuania</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">25</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Luxembourg</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">26</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Malta</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">27</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Monaco</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">28</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Montenegro</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">29</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Netherlands</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">30</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">North Macedonia</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">31</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Norway</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">32</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Poland</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">33</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Portugal</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">34</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Romania</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">35</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">San Marino</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">36</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Serbia</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">37</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Slovakia</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">38</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Slovenia</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">39</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Spain</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">40</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Sweden</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">41</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Switzerland</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">42</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Türkiye</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">43</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Ukraine</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">44</td>
+    <td class="empty">Europe</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">United Kingdom</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">45</td>
+    <td class="conti">Asie</td>
+    <td class="under5000">21908</td>
+    <td class="tenta">1</td>
+    <td class="pays">Bangladesh</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/9v2hzilQcQBoZNhg">Lien</a></td>
+    <td class="date">27 Mai 2021 [00h26]</td>
+    <td class="timeset">300</td>
+    <td class="dist">807.0 km</td>
+    <td class="under5000">10516</td>
+    <td class="under5000">11392</td>
+    <td class="dist">593.8 km</td>
+    <td class="timeset">300</td>
+    <td class="date">27 Mai 2021 [00h26]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/9v2hzilQcQBoZNhg">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">46</td>
+    <td class="conti">Asie</td>
+    <td class="under6500">28784</td>
+    <td class="tenta">1</td>
+    <td class="pays">Bhutan</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/HEjUTV9ApsAcxRYJ">Lien</a></td>
+    <td class="date">26 Oct. 2021 [22h22]</td>
+    <td class="timeset">300</td>
+    <td class="dist">123.3 km</td>
+    <td class="under8000">17009</td>
+    <td class="under5000">11775</td>
+    <td class="dist">7696.3 km</td>
+    <td class="timeset">300</td>
+    <td class="date">26 Oct. 2021 [22h22]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/HEjUTV9ApsAcxRYJ">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">47</td>
+    <td class="empty">Asie</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Cambodia</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">48</td>
+    <td class="conti">Asie</td>
+    <td class="under6500">30876</td>
+    <td class="tenta">1</td>
+    <td class="pays">Christmas Island</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/SpCVbhi0k1MS1H9a">Lien</a></td>
+    <td class="date">20 Dec. 2023 [22h01]</td>
+    <td class="timeset">180</td>
+    <td class="dist">11.0 km</td>
+    <td class="under6500">14305</td>
+    <td class="under8000">16571</td>
+    <td class="dist">10.5 km</td>
+    <td class="timeset">180</td>
+    <td class="date">20 Dec. 2023 [22h01]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/SpCVbhi0k1MS1H9a">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">49</td>
+    <td class="conti">Asie</td>
+    <td class="under5000">20827</td>
+    <td class="tenta">1</td>
+    <td class="pays">Hong Kong</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/ad2xrXLjBcS5gmaV">Lien</a></td>
+    <td class="date">15 Dec. 2023 [23h59]</td>
+    <td class="timeset">180</td>
+    <td class="dist">99.6 km</td>
+    <td class="under3500">6744</td>
+    <td class="under6500">14083</td>
+    <td class="dist">49.2 km</td>
+    <td class="timeset">180</td>
+    <td class="date">15 Dec. 2023 [23h59]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/ad2xrXLjBcS5gmaV">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">50</td>
+    <td class="empty">Asie</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">India</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">51</td>
+    <td class="conti">Asie</td>
+    <td class="under2000">9656</td>
+    <td class="tenta">1</td>
+    <td class="pays">Indonesia</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/soxSzp4KDdZhLGWY">Lien</a></td>
+    <td class="date">26 Oct. 2021 [21h50]</td>
+    <td class="timeset">300</td>
+    <td class="dist">3778.2 km</td>
+    <td class="under3500">7850</td>
+    <td class="under2000">1806</td>
+    <td class="dist">4815.8 km</td>
+    <td class="timeset">300</td>
+    <td class="date">26 Oct. 2021 [21h50]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/soxSzp4KDdZhLGWY">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">52</td>
+    <td class="conti">Asie</td>
+    <td class="under9500">44150</td>
+    <td class="tenta">1</td>
+    <td class="pays">Israel</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/cT6Ua0izcRydS74z">Lien</a></td>
+    <td class="date">20 Dec. 2023 [22h41]</td>
+    <td class="timeset">180</td>
+    <td class="dist">49.6 km</td>
+    <td class="under9500">20097</td>
+    <td class="under10k">24053</td>
+    <td class="dist">8.4 km</td>
+    <td class="timeset">180</td>
+    <td class="date">20 Dec. 2023 [22h41]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/cT6Ua0izcRydS74z">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">53</td>
+    <td class="conti">Asie</td>
+    <td class="under9500">40005</td>
+    <td class="tenta">1</td>
+    <td class="pays">Japan</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/rF95Vt4EILtw82Pe">Lien</a></td>
+    <td class="date">11 Sept. 2021 [22h51]</td>
+    <td class="timeset">300</td>
+    <td class="dist">600.1 km</td>
+    <td class="under8000">17570</td>
+    <td class="under9500">22435</td>
+    <td class="dist">158.9 km</td>
+    <td class="timeset">300</td>
+    <td class="date">11 Sept. 2021 [22h51]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/rF95Vt4EILtw82Pe">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">54</td>
+    <td class="conti">Asie</td>
+    <td class="under9500">45002</td>
+    <td class="tenta">1</td>
+    <td class="pays">Jordan</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/9cvba1LSio6MNFIb">Lien</a></td>
+    <td class="date">17 Mai 2021 [00h54]</td>
+    <td class="timeset">300</td>
+    <td class="dist">22.2 km</td>
+    <td class="under9500">22311</td>
+    <td class="under9500">22691</td>
+    <td class="dist">19.5 km</td>
+    <td class="timeset">300</td>
+    <td class="date">17 Mai 2021 [00h54]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/9cvba1LSio6MNFIb">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">55</td>
+    <td class="conti">Asie</td>
+    <td class="under6500">27833</td>
+    <td class="tenta">1</td>
+    <td class="pays">Kyrgyzstan</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/nww3QYRTe5Y98Ym5">Lien</a></td>
+    <td class="date">12 Sept. 2021 [00h32]</td>
+    <td class="timeset">300</td>
+    <td class="dist">524.9 km</td>
+    <td class="under6500">14035</td>
+    <td class="under6500">13798</td>
+    <td class="dist">839.9 km</td>
+    <td class="timeset">300</td>
+    <td class="date">12 Sept. 2021 [00h32]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/nww3QYRTe5Y98Ym5">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">56</td>
+    <td class="conti">Asie</td>
+    <td class="under9500">42236</td>
+    <td class="tenta">1</td>
+    <td class="pays">Laos</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/KYeCkedqWAHsb4Rn">Lien</a></td>
+    <td class="date">26 Mai 2021 [22h42]</td>
+    <td class="timeset">300</td>
+    <td class="dist">44.6 km</td>
+    <td class="under9500">22693</td>
+    <td class="under8000">19543</td>
+    <td class="dist">460.8 km</td>
+    <td class="timeset">300</td>
+    <td class="date">26 Mai 2021 [22h42]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/KYeCkedqWAHsb4Rn">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">57</td>
+    <td class="conti">Asie</td>
+    <td class="under3500">16456</td>
+    <td class="tenta">1</td>
+    <td class="pays">Malaysia</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/DJtEbmMc0av2gGF5">Lien</a></td>
+    <td class="date">20 Dec. 2023 [21h38]</td>
+    <td class="timeset">180</td>
+    <td class="dist">1917.8 km</td>
+    <td class="under5000">11383</td>
+    <td class="under3500">5073</td>
+    <td class="dist">4702.8 km</td>
+    <td class="timeset">180</td>
+    <td class="date">20 Dec. 2023 [21h38]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/DJtEbmMc0av2gGF5">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">58</td>
+    <td class="empty">Asie</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Mongolia</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">59</td>
+    <td class="empty">Asie</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Philippines</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">60</td>
+    <td class="empty">Asie</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Qatar</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">61</td>
+    <td class="conti">Asie</td>
+    <td class="under6500">25108</td>
+    <td class="tenta">1</td>
+    <td class="pays">Russia</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/AEb1Iq2MmJPFCCmm">Lien</a></td>
+    <td class="date">26 Mai 2021 [23h14]</td>
+    <td class="timeset">300</td>
+    <td class="dist">5885.4 km</td>
+    <td class="under5000">10199</td>
+    <td class="under6500">14909</td>
+    <td class="dist">6704.4 km</td>
+    <td class="timeset">300</td>
+    <td class="date">26 Mai 2021 [23h14]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/AEb1Iq2MmJPFCCmm">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">62</td>
+    <td class="conti">Asie</td>
+    <td class="under6500">28711</td>
+    <td class="tenta">1</td>
+    <td class="pays">Singapore</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/RREgscGOIeOhXu7Y">Lien</a></td>
+    <td class="date">10 Avr. 2021 [01h23]</td>
+    <td class="timeset">300</td>
+    <td class="dist">16.7 km</td>
+    <td class="under6500">15082</td>
+    <td class="under6500">13629</td>
+    <td class="dist">39.2 km</td>
+    <td class="timeset">300</td>
+    <td class="date">10 Avr. 2021 [01h23]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/RREgscGOIeOhXu7Y">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">63</td>
+    <td class="conti">Asie</td>
+    <td class="under6500">27571</td>
+    <td class="tenta">1</td>
+    <td class="pays">South Korea</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/jic0DRzeKa0LNk9v">Lien</a></td>
+    <td class="date">1 Avr. 2021 [23h17]</td>
+    <td class="timeset">300</td>
+    <td class="dist">445.2 km</td>
+    <td class="under5000">10559</td>
+    <td class="under8000">17012</td>
+    <td class="dist">277.4 km</td>
+    <td class="timeset">300</td>
+    <td class="date">1 Avr. 2021 [23h17]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/jic0DRzeKa0LNk9v">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">64</td>
+    <td class="conti">Asie</td>
+    <td class="under6500">28528</td>
+    <td class="tenta">1</td>
+    <td class="pays">Sri Lanka</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/9WNsw2JWLUHF9wOe">Lien</a></td>
+    <td class="date">10 Avr. 2021 [02h30]</td>
+    <td class="timeset">300</td>
+    <td class="dist">541.6 km</td>
+    <td class="under6500">14516</td>
+    <td class="under6500">14012</td>
+    <td class="dist">424.0 km</td>
+    <td class="timeset">300</td>
+    <td class="date">10 Avr. 2021 [02h30]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/9WNsw2JWLUHF9wOe">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">65</td>
+    <td class="conti">Asie</td>
+    <td class="under8000">34259</td>
+    <td class="tenta">1</td>
+    <td class="pays">Taiwan</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/wrfLWnPGROOGKt0E">Lien</a></td>
+    <td class="date">24 Mai 2021 [01h39]</td>
+    <td class="timeset">300</td>
+    <td class="dist">449.0 km</td>
+    <td class="under6500">12806</td>
+    <td class="under9500">21453</td>
+    <td class="dist">42.2 km</td>
+    <td class="timeset">300</td>
+    <td class="date">24 Mai 2021 [01h39]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/wrfLWnPGROOGKt0E">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">66</td>
+    <td class="conti">Asie</td>
+    <td class="under3500">15044</td>
+    <td class="tenta">1</td>
+    <td class="pays">Thailand</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/oiNvT7gIh5VNmlTr">Lien</a></td>
+    <td class="date">10 Avr. 2021 [01h58]</td>
+    <td class="timeset">300</td>
+    <td class="dist">2347.5 km</td>
+    <td class="under2000">2675</td>
+    <td class="under5000">12369</td>
+    <td class="dist">1231.8 km</td>
+    <td class="timeset">300</td>
+    <td class="date">10 Avr. 2021 [01h58]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/oiNvT7gIh5VNmlTr">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">67</td>
+    <td class="empty">Asie</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">United Arab Emirates</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">68</td>
+    <td class="conti">Afrique</td>
+    <td class="under9500">40509</td>
+    <td class="tenta">1</td>
+    <td class="pays">Botswana</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/guFbCZ8nSe58d2B2">Lien</a></td>
+    <td class="date">17 Mai 2021 [00h22]</td>
+    <td class="timeset">300</td>
+    <td class="dist">439.5 km</td>
+    <td class="under8000">18955</td>
+    <td class="under9500">21554</td>
+    <td class="dist">115.7 km</td>
+    <td class="timeset">300</td>
+    <td class="date">17 Mai 2021 [00h22]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/guFbCZ8nSe58d2B2">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">69</td>
+    <td class="conti">Afrique</td>
+    <td class="under5000">24743</td>
+    <td class="tenta">1</td>
+    <td class="pays">Eswatini</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/28xxjnUCJT5HqNH5">Lien</a></td>
+    <td class="date">16 Mai 2021 [23h51]</td>
+    <td class="timeset">300</td>
+    <td class="dist">171.9 km</td>
+    <td class="under5000">9978</td>
+    <td class="under6500">14765</td>
+    <td class="dist">112.6 km</td>
+    <td class="timeset">300</td>
+    <td class="date">16 Mai 2021 [23h51]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/28xxjnUCJT5HqNH5">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">70</td>
+    <td class="conti">Afrique</td>
+    <td class="under8000">36631</td>
+    <td class="tenta">1</td>
+    <td class="pays">Ghana</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/oY3hc6dpMhQBXBQE">Lien</a></td>
+    <td class="date">24 Mai 2021 [02h11]</td>
+    <td class="timeset">300</td>
+    <td class="dist">569.3 km</td>
+    <td class="under6500">14613</td>
+    <td class="under9500">22018</td>
+    <td class="dist">58.2 km</td>
+    <td class="timeset">300</td>
+    <td class="date">24 Mai 2021 [02h11]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/oY3hc6dpMhQBXBQE">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">71</td>
+    <td class="conti">Afrique</td>
+    <td class="under8000">32501</td>
+    <td class="tenta">1</td>
+    <td class="pays">Kenya</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/8QnRYEGosriPwcIK">Lien</a></td>
+    <td class="date">20 Dec. 2023 [20h55]</td>
+    <td class="timeset">180</td>
+    <td class="dist">835.9 km</td>
+    <td class="under6500">14697</td>
+    <td class="under8000">17804</td>
+    <td class="dist">320.2 km</td>
+    <td class="timeset">180</td>
+    <td class="date">20 Dec. 2023 [20h55]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/8QnRYEGosriPwcIK">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">72</td>
+    <td class="conti">Afrique</td>
+    <td class="under6500">25372</td>
+    <td class="tenta">1</td>
+    <td class="pays">Lesotho</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/7ZeKA7aqoakywSFa">Lien</a></td>
+    <td class="date">29 Avr. 2021 [23h27]</td>
+    <td class="timeset">300</td>
+    <td class="dist">192.8 km</td>
+    <td class="under5000">11358</td>
+    <td class="under6500">14014</td>
+    <td class="dist">191.6 km</td>
+    <td class="timeset">300</td>
+    <td class="date">29 Avr. 2021 [23h27]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/7ZeKA7aqoakywSFa">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">73</td>
+    <td class="empty">Afrique</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Madagascar</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">74</td>
+    <td class="conti">Afrique</td>
+    <td class="under5000">18194</td>
+    <td class="tenta">1</td>
+    <td class="pays">Nigeria</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/dzjx9qWcPSRgt1Qm">Lien</a></td>
+    <td class="date">29 Avr. 2021 [22h56]</td>
+    <td class="timeset">300</td>
+    <td class="dist">1049.0 km</td>
+    <td class="under3500">6206</td>
+    <td class="under5000">11988</td>
+    <td class="dist">591.5 km</td>
+    <td class="timeset">300</td>
+    <td class="date">29 Avr. 2021 [22h56]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/dzjx9qWcPSRgt1Qm">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">75</td>
+    <td class="empty">Afrique</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Rwanda</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">76</td>
+    <td class="conti">Afrique</td>
+    <td class="under6500">26946</td>
+    <td class="tenta">1</td>
+    <td class="pays">Senegal</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/kAfTrgiWV0cnn0UE">Lien</a></td>
+    <td class="date">1 Avr. 2021 [23h55]</td>
+    <td class="timeset">300</td>
+    <td class="dist">1179.6 km</td>
+    <td class="under3500">7082</td>
+    <td class="under8000">19864</td>
+    <td class="dist">589.9 km</td>
+    <td class="timeset">300</td>
+    <td class="date">1 Avr. 2021 [23h55]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/kAfTrgiWV0cnn0UE">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">77</td>
+    <td class="empty">Afrique</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">South Africa</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">78</td>
+    <td class="conti">Afrique</td>
+    <td class="under6500">30112</td>
+    <td class="tenta">1</td>
+    <td class="pays">Tunisia</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/zWFR8trgG5LPEn0j">Lien</a></td>
+    <td class="date">20 Dec. 2023 [23h01]</td>
+    <td class="timeset">180</td>
+    <td class="dist">692.0 km</td>
+    <td class="under6500">14335</td>
+    <td class="under6500">15777</td>
+    <td class="dist">627.2 km</td>
+    <td class="timeset">180</td>
+    <td class="date">20 Dec. 2023 [23h01]</td>
+    <td class="cid"><a href="https://www.geoguessr.com/results/zWFR8trgG5LPEn0j">Lien</a></td>
+</tr>
+<tr>
+    <td class="num">79</td>
+    <td class="empty">Afrique</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Uganda</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">80</td>
+    <td class="empty">N. Amérique</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Canada</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">81</td>
+    <td class="empty">N. Amérique</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Curacao</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">82</td>
+    <td class="empty">N. Amérique</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Dominican Republic</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">83</td>
+    <td class="empty">N. Amérique</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Greenland</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">84</td>
+    <td class="empty">N. Amérique</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Guatemala</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">85</td>
+    <td class="empty">N. Amérique</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Mexico</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">86</td>
+    <td class="empty">N. Amérique</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Panama</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">87</td>
+    <td class="empty">N. Amérique</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Puerto Rico</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">88</td>
+    <td class="empty">N. Amérique</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">United States</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">89</td>
+    <td class="empty">N. Amérique</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Us Virgin Islands</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">90</td>
+    <td class="empty">S. Amérique</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Argentina</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">91</td>
+    <td class="empty">S. Amérique</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Bolivia</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">92</td>
+    <td class="empty">S. Amérique</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Brazil</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">93</td>
+    <td class="empty">S. Amérique</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Chile</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">94</td>
+    <td class="empty">S. Amérique</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Colombia</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">95</td>
+    <td class="empty">S. Amérique</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Ecuador</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">96</td>
+    <td class="empty">S. Amérique</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Peru</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">97</td>
+    <td class="empty">S. Amérique</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Uruguay</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">98</td>
+    <td class="empty">Océanie</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">American Samoa</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">99</td>
+    <td class="empty">Océanie</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Australia</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">100</td>
+    <td class="empty">Océanie</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Guam</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">101</td>
+    <td class="empty">Océanie</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">New Zealand</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+<tr>
+    <td class="num">102</td>
+    <td class="empty">Océanie</td>
+    <td class="emptyScore"> </td>
+    <td class="empty"> </td>
+    <td class="emptyPays">Northern Mariana Islands</td>
+    <td class="emptyScore"><a href=" "> </a></td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"> </td>
+    <td class="emptyScore"><a href=" "> </a></td>
+</tr>
+</table>
+</body>
+</html>
