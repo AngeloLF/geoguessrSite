@@ -1,0 +1,134 @@
+body {
+    text-align: center;
+    background-color: #D2D580;
+}
+
+table {
+    margin: auto; /* Marge automatique pour centrer le tableau */
+    border-collapse: collapse; /* Pour fusionner les bordures de cellules */
+}
+
+th, td {
+    border: 1px solid black; /* Bordures de cellules */
+    padding: 6px; /* Espacement interne des cellules */
+    background-color: #EAEE92;
+}
+
+.mainscore {
+    background-color: #dd0000;
+    font-weight: bold;
+}
+
+.maindist {
+    background-color: #FF6666;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.hideen {
+    display: none;
+}
+
+.likeBack {
+    background-color: #D2D580;
+}
+
+.under2000 {
+    background-color: #505050;
+    font-weight: bold;
+}
+
+.under3500 {
+    background-color: #990000;
+    font-weight: bold;
+}
+
+.under5000 {
+    background-color: #FF0000; 
+    font-weight: bold;
+}
+
+.under6500 {
+    background-color: orange; 
+    font-weight: bold;
+}
+
+.under8000 {
+    background-color: lightgreen; 
+    font-weight: bold;
+}
+
+.under9500 {
+    background-color: green; 
+    font-weight: bold;
+}
+
+.under10k {
+    background-color: #0080FF; 
+    font-weight: bold;
+}
+
+.num {
+	background-color: #a0a0a0;
+}
+
+.date {
+	background-color: #bbbbbb;
+	font-style: italic;
+}
+
+.pays {
+	background-color: #bbbbbb;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.dist {
+	background-color: #dddddd;
+	text-align: right;
+	padding-right: 10px;
+}
+
+.timeset {
+	background-color: #bbbbbb;
+}
+
+.cid {
+	background-color: #bbbbbb;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.emptyScore {
+    background-color: #404040;
+}
+
+.emptyPays {
+    background-color: #707070;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.empty {
+    background-color: #707070;
+}
+
+.retour {
+    color: black;
+    font-weight: bold;
+}
+
+.upth {
+    background-color: #999900;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.conti {
+    background-color: #dddddd;
+}
+
+.tenta {
+    background-color: #dddddd;
+}
