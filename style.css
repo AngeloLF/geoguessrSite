@@ -14,16 +14,51 @@ th, td {
     background-color: #EAEE92;
 }
 
-.mainscore {
-    background-color: #dd0000;
+
+/* For the main (best / ext ext // all / ext all) */
+
+.bestscore {
+    background-color: #00cc00;
     font-weight: bold;
 }
-
-.maindist {
-    background-color: #FF6666;
+.bestother {
+    background-color: #66FF66;
     text-align: right;
+    font-weight: normal;
     padding-right: 10px;
 }
+
+.extremescore {
+    background-color: #ff4444;
+    font-weight: bold;
+}
+.extremeother {
+    background-color: #ff6666;
+    font-weight: normal;
+    padding-right: 10px;
+    text-align: right;
+}
+
+
+.totduoscore {
+    background-color: #3399FF;
+    font-weight: bold;
+}
+.totduoother {
+    background-color: #3399FF;
+    font-weight: normal;
+    padding-right: 10px;
+    text-align: right;
+}
+
+#sur {
+    font-size: 30px;
+}
+#km {
+    font-size: 25px;
+    font-weight: normal;
+}
+
 
 .hideen {
     display: none;
