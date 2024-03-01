@@ -1,287 +1,602 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html lang='en'>
+    <meta charset='UTF-8'>
+    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='style_score.css'>
+    <link rel='stylesheet' href='style_barre.css'>
     <title>Main Page</title>
-    <link rel="stylesheet" href="style.css">
-</head><body>
-<h1>Accueil - Les défis GeoGuessr - Aexeos & Kirin</h1>
-<h2>Challenge : All destinations</h2>
-<p>Le principe ici est de faire les challenges de tout les pays disponibles sur GeoGuessr, et d'obtenir lesmeilleurs résultats pour chacun d'entre eux. On a le résumé de ces défis ici : </p>
-<table border=1>
-<tr>
-    <th colspan="2" class="upth"> </th>
-    <th               class="upth">Duo</th>
-    <th colspan="3" class="upth">Kirin</th>
-    <th colspan="3" class="upth">Aexeos</th>
-</tr>
-<tr>
-    <th colspan="2"> Config </th>
-    <th> Score </th>
-    <th> Time </th>
-    <th> Dist </th>
-    <th> Score </th>
-    <th> Score </th>
-    <th> Dist </th>
-    <th> Time </th>
-</tr>
-<tr>
-    <th> Total </th>
-    <th> 1 </th>
-    <th class="bestscore">2 632 087 </th>
-    <th class="bestother"> 30h 05m 15s </th>
-    <th class="bestother"> 105 246 km </th>
-    <th class="bestscore">1 182 000 </th>
-    <th class="bestscore">1 450 087 </th>
-    <th class="bestother"> 81 498 km </th>
-    <th class="bestother"> 29h 33m 46s </th>
-</tr>
-<tr>
-    <th> Challenge </th>
-    <th> 88 </th>
-    <th class="bestscore">29 910 </th>
-    <th class="bestother"> 20m 31s </th>
-    <th class="bestother"> 1 195 km </th>
-    <th class="bestscore">13 431 </th>
-    <th class="bestscore">16 478 </th>
-    <th class="bestother"> 926.1 km </th>
-    <th class="bestother"> 20m 09s </th>
-</tr>
-<tr>
-    <th> Round </th>
-    <th> 440 </th>
-    <th class="bestscore">5 982 </th>
-    <th class="bestother">  4m 06s </th>
-    <th class="bestother"> 239.2 km </th>
-    <th class="bestscore">2 686 </th>
-    <th class="bestscore">3 295 </th>
-    <th class="bestother"> 185.2 km </th>
-    <th class="bestother">  4m 02s </th>
-</tr>
-<tr>
-    <th>  </th>
-    <th> % </th>
-    <th class="bestscore">59.8 % </th>
-    <th class="bestother"> 94.5 % </th>
-    <th class="bestother">  </th>
-    <th class="bestscore">53.7 % </th>
-    <th class="bestscore">65.9 % </th>
-    <th class="bestother">  </th>
-    <th class="bestother"> 92.9 % </th>
-</tr>
-</table>
-<br/>
-<table border=1>
-<tr>
-    <th rowspan="3" class="totduoscore" id="sur"> 2 632 087 sur 4 400 000 <br/> points </th>
-    <th rowspan="2" class="totduoscore" id="km"> 186 744 km </th>
-    <th class="totduoscore"> 4.66 equateur </th>
-</tr>
-<tr>
-    <th class="totduoscore"> 0.49 Terre-Lune </th>
-</tr>
-<tr>
-    <th class="totduoscore"> 59.8 % </th>
-    <th class="totduoscore"> 0.12 % Terre-Soleil </th>
-</tr>
-</table>
-</br>
-<table border=1>
-<tr>
-    <th               class="upth">Extrème</th>
-    <th colspan="2" class="upth">Duo</th>
-    <th colspan="3" class="upth">Kirin</th>
-    <th colspan="3" class="upth">Aexeos</th>
-</tr>
-<tr>
-    <th> </th>
-    <th> Valeur </th>
-    <th> Challenge </th>
-    <th> Lien </th>
-    <th> Challenge </th>    <th> Valeur </th>
-    <th> Valeur </th>
-    <th> Challenge </th>    <th> Lien </th>
-</tr>
-<tr>
-    <th> Min Score</th>
-    <th class="extremescore"> 8 488 </th>
-    <th class="extremeother"> Mongolia </th>
-    <th class="extremeother"> <a href=https://www.geoguessr.com/results/oiNvT7gIh5VNmlTr>Lien</a> </th>
-    <th class="extremeother"> Thailand </th>    <th class="extremescore"> 2 675 </th>
-    <th class="extremescore"> 1 806 </th>
-    <th class="extremeother"> Indonesia </th>    <th class="extremeother"> <a href=https://www.geoguessr.com/results/soxSzp4KDdZhLGWY>Lien</a> </th>
-</tr>
-<tr>
-    <th> Max Score</th>
-    <th class="extremescore"> 48 388 </th>
-    <th class="extremeother"> Guam </th>
-    <th class="extremeother"> <a href=https://www.geoguessr.com/results/bpCQ0RcDRKPXwpP1>Lien</a> </th>
-    <th class="extremeother"> Guam </th>    <th class="extremescore"> 24 249 </th>
-    <th class="extremescore"> 24 912 </th>
-    <th class="extremeother"> Andorra </th>    <th class="extremeother"> <a href=https://www.geoguessr.com/results/3Cc8V8BmHwmv1MPn>Lien</a> </th>
-</tr>
-<tr>
-    <th> Min Dist</th>
-    <th class="extremescore"> 1.8 km </th>
-    <th class="extremeother"> Monaco </th>
-    <th class="extremeother"> <a href=https://www.geoguessr.com/results/qda6n22upad58g69>Lien</a> </th>
-    <th class="extremeother"> Monaco </th>    <th class="extremescore"> 1.7 km </th>
-    <th class="extremescore"> 28.5 m </th>
-    <th class="extremeother"> Monaco </th>    <th class="extremeother"> <a href=https://www.geoguessr.com/results/qda6n22upad58g69>Lien</a> </th>
-</tr>
-<tr>
-    <th> Max Dist</th>
-    <th class="extremescore"> 12 789 km </th>
-    <th class="extremeother"> Brazil </th>
-    <th class="extremeother"> <a href=https://www.geoguessr.com/results/5ey2cnpOrMFeh8OJ>Lien</a> </th>
-    <th class="extremeother"> World </th>    <th class="extremescore"> 9 737 km </th>
-    <th class="extremescore"> 8 290 km </th>
-    <th class="extremeother"> Brazil </th>    <th class="extremeother"> <a href=https://www.geoguessr.com/results/EQwEgEgiXkUHFlaj>Lien</a> </th>
-</tr>
-</table>
-<p>On a ensuite le tableau des meileurs socre pays par pays ainsi qu'une carte coloré en fonctiondu score, avec tout les lieux réalisé : </p>
-<h3><a href="allpays.html" class="slien">Liste des Challenges</a></h3><h3><a href="mapBest.html" class="slien">Carte de nos challenges Pays</a></h3><h2>Challenge : All Challenges</h2>
-<p>On va résumer ici la totalité des challenges effectués</p>
-<table border=1>
-<tr>
-    <th colspan="2" class="upth"> </th>
-    <th               class="upth">Duo</th>
-    <th colspan="4" class="upth">Kirin</th>
-    <th colspan="4" class="upth">Aexeos</th>
-</tr>
-<tr>
-    <th colspan="2"> Config </th>
-    <th> Score </th>
-    <th> Nb </th>
-    <th> Time </th>
-    <th> Dist </th>
-    <th> Score </th>
-    <th> Score </th>
-    <th> Dist </th>
-    <th> Time </th>
-    <th> Nb </th>
-</tr>
-<tr>
-    <th> Total </th>
-    <th> 1 </th>
-    <th class="bestscore">2 806 428 </th>
-    <th> 1 </th>
-    <th class="bestother"> 30h 35m 14s </th>
-    <th class="bestother"> 143 826 km </th>
-    <th class="bestscore">1 200 175 </th>
-    <th class="bestscore">1 606 253 </th>
-    <th class="bestother"> 190 801 km </th>
-    <th class="bestother"> 31h 53m 17s </th>
-    <th> 1 </th>
-</tr>
-<tr>
-    <th> Challenge </th>
-    <th> 189 </th>
-    <th class="bestscore">14 848 </th>
-    <th> 90 </th>
-    <th class="bestother"> 20m 23s </th>
-    <th class="bestother"> 1 598 km </th>
-    <th class="bestscore">13 335 </th>
-    <th class="bestscore">16 224 </th>
-    <th class="bestother"> 1 927 km </th>
-    <th class="bestother"> 19m 20s </th>
-    <th> 99 </th>
-</tr>
-<tr>
-    <th> Round </th>
-    <th> 945 </th>
-    <th class="bestscore">2 969 </th>
-    <th> 450 </th>
-    <th class="bestother">  4m 05s </th>
-    <th class="bestother"> 319.6 km </th>
-    <th class="bestscore">2 667 </th>
-    <th class="bestscore">3 244 </th>
-    <th class="bestother"> 385.5 km </th>
-    <th class="bestother">  3m 52s </th>
-    <th> 495 </th>
-</tr>
-<tr>
-    <th>  </th>
-    <th> % </th>
-    <th class="bestscore">59.4 % </th>
-    <th> % </th>
-    <th class="bestother"> 94.6 % </th>
-    <th class="bestother">  </th>
-    <th class="bestscore">53.3 % </th>
-    <th class="bestscore">64.9 % </th>
-    <th class="bestother">  </th>
-    <th class="bestother"> 92.2 % </th>
-    <th> % </th>
-</tr>
-</table>
-<br/>
-<table border=1>
-<tr>
-    <th rowspan="3" class="totduoscore" id="sur"> 2 806 428 sur 4 725 000 <br/> points </th>
-    <th rowspan="2" class="totduoscore" id="km"> 334 628 km </th>
-    <th class="totduoscore"> 8.35 equateur </th>
-</tr>
-<tr>
-    <th class="totduoscore"> 0.87 Terre-Lune </th>
-</tr>
-<tr>
-    <th class="totduoscore"> 59.4 % </th>
-    <th class="totduoscore"> 0.22 % Terre-Soleil </th>
-</tr>
-</table>
-</br>
-<table border=1>
-<tr>
-    <th               class="upth">Extrème</th>
-    <th colspan="2" class="upth">Duo</th>
-    <th colspan="3" class="upth">Kirin</th>
-    <th colspan="3" class="upth">Aexeos</th>
-</tr>
-<tr>
-    <th> </th>
-    <th> Valeur </th>
-    <th> Challenge </th>
-    <th> Lien </th>
-    <th> Challenge </th>    <th> Valeur </th>
-    <th> Valeur </th>
-    <th> Challenge </th>    <th> Lien </th>
-</tr>
-<tr>
-    <th> Min Score</th>
-    <th class="extremescore"> 8 488 </th>
-    <th class="extremeother"> Mongolia </th>
-    <th class="extremeother"> <a href=https://www.geoguessr.com/results/oiNvT7gIh5VNmlTr>Lien</a> </th>
-    <th class="extremeother"> Thailand </th>    <th class="extremescore"> 2 675 </th>
-    <th class="extremescore"> 1 806 </th>
-    <th class="extremeother"> Indonesia </th>    <th class="extremeother"> <a href=https://www.geoguessr.com/results/soxSzp4KDdZhLGWY>Lien</a> </th>
-</tr>
-<tr>
-    <th> Max Score</th>
-    <th class="extremescore"> 48 388 </th>
-    <th class="extremeother"> Guam </th>
-    <th class="extremeother"> <a href=https://www.geoguessr.com/results/bpCQ0RcDRKPXwpP1>Lien</a> </th>
-    <th class="extremeother"> Guam </th>    <th class="extremescore"> 24 249 </th>
-    <th class="extremescore"> 24 912 </th>
-    <th class="extremeother"> Andorra </th>    <th class="extremeother"> <a href=https://www.geoguessr.com/results/3Cc8V8BmHwmv1MPn>Lien</a> </th>
-</tr>
-<tr>
-    <th> Min Dist</th>
-    <th class="extremescore"> 1.8 km </th>
-    <th class="extremeother"> Monaco </th>
-    <th class="extremeother"> <a href=https://www.geoguessr.com/results/qda6n22upad58g69>Lien</a> </th>
-    <th class="extremeother"> Monaco </th>    <th class="extremescore"> 1.7 km </th>
-    <th class="extremescore"> 28.5 m </th>
-    <th class="extremeother"> Monaco </th>    <th class="extremeother"> <a href=https://www.geoguessr.com/results/qda6n22upad58g69>Lien</a> </th>
-</tr>
-<tr>
-    <th> Max Dist</th>
-    <th class="extremescore"> 27 991 km </th>
-    <th class="extremeother"> World </th>
-    <th class="extremeother"> <a href=https://www.geoguessr.com/results/vum3OvIAL9oDiusF>Lien</a> </th>
-    <th class="extremeother"> World </th>    <th class="extremescore"> 22 144 km </th>
-    <th class="extremescore"> 40 323 km </th>
-    <th class="extremeother"> World </th>    <th class="extremeother"> <a href=https://www.geoguessr.com/results/SLN65ZfJVS9ABCTJ>Lien</a> </th>
-</tr>
-</table>
-<h3><a href="resume.html"  class="slien">Liste de tout les challenges</a></h3><h3><a href="mapAll.html" class="slien">Carte de toutes nos destinations</a></h3></body>
+</head>
+<body>
+    <div class="divTitle">
+        <h1> Accueil - Les défis GeoGuessr - Aexeos & Kirin </h1>
+        </div>
+    <div class="divDefault">
+        <h2> Challenge : Pays </h2>
+        <table>
+            <tr>
+                <th class='upth' colspan='2'> Résumé </th>
+                <th class='upth'> Duo </th>
+                <th class='upth' colspan='4'> Kirin </th>
+                <th class='upth' colspan='4'> Aexeos </th>
+            </tr>
+            <tr>
+                <th colspan='2'> Config </th>
+                <th> Score </th>
+                <th> Nb </th>
+                <th> Time </th>
+                <th> Dist </th>
+                <th> Score </th>
+                <th> Score </th>
+                <th> Dist </th>
+                <th> Time </th>
+                <th> Nb </th>
+            </tr>
+            <tr>
+                <td> Total </td>
+                <td> 1 </td>
+                <td class='bestscore'> 2 594 683 </td>
+                <td> 1 </td>
+                <td class='bestother'> 29h 50m 15s </td>
+                <td class='bestother'> 95 508 km </td>
+                <td class='bestscore'> 1 167 437 </td>
+                <td class='bestscore'> 1 427 246 </td>
+                <td class='bestother'> 80 706 km </td>
+                <td class='bestother'> 29h 18m 57s </td>
+                <td> 1 </td>
+            </tr>
+            <tr>
+                <td> Challenge </td>
+                <td> 174 </td>
+                <td class='bestscore'> 14 911 </td>
+                <td> 87 </td>
+                <td class='bestother'> 20m 35s </td>
+                <td class='bestother'> 1 097 km </td>
+                <td class='bestscore'> 13 418 </td>
+                <td class='bestscore'> 16 405 </td>
+                <td class='bestother'> 927.7 km </td>
+                <td class='bestother'> 20m 13s </td>
+                <td> 87 </td>
+            </tr>
+            <tr>
+                <td> Round </td>
+                <td> 870 </td>
+                <td class='bestscore'> 2 982 </td>
+                <td> 435 </td>
+                <td class='bestother'>  4m 07s </td>
+                <td class='bestother'> 219.6 km </td>
+                <td class='bestscore'> 2 683 </td>
+                <td class='bestscore'> 3 281 </td>
+                <td class='bestother'> 185.5 km </td>
+                <td class='bestother'>  4m 03s </td>
+                <td> 435 </td>
+            </tr>
+            <tr>
+                <td>   </td>
+                <td> % </td>
+                <td class='bestscore'> 59.6 % </td>
+                <td> % </td>
+                <td class='bestother'> 94.5 % </td>
+                <td class='bestother'>   </td>
+                <td class='bestscore'> 53.7 % </td>
+                <td class='bestscore'> 65.6 % </td>
+                <td class='bestother'>   </td>
+                <td class='bestother'> 92.8 % </td>
+                <td> % </td>
+            </tr>
+        </table>
+        <br/>
+        <table>
+            <tr>
+                <th rowspan="3" class="totduoscore_sur"> 2 594 683 sur 4 350 000 <br/> points </th>
+                <th rowspan="2" class="totduoscore_km"> 176 215 km </th>
+                <th class="totduoscore"> 4.40 equateur </th>
+            </tr>
+            <tr>
+                <th class='totduoscore'> 0.46 Terre-Lune </th>
+            </tr>
+            <tr>
+                <th class='totduoscore'> 59.6 %  </th>
+                <th class='totduoscore'> 0.12 % Terre-Soleil </th>
+            </tr>
+        </table>
+        <br/>
+        <table>
+            <tr>
+                <th               class="upth">Extrème</th>
+                <th colspan="2" class="upth">Duo</th>
+                <th colspan="3" class="upth">Kirin</th>
+                <th colspan="3" class="upth">Aexeos</th>
+            </tr>
+            <tr>
+                <th>   </th>
+                <th> Valeur </th>
+                <th> Challenge </th>
+                <th> Lien </th>
+                <th> Challenge </th>
+                <th> Valeur </th>
+                <th> Valeur </th>
+                <th> Challenge </th>
+                <th> Lien </th>
+            </tr>
+            <tr>
+                <td> Min Score </td>
+                <td class='extremescore'> 8 488 </td>
+                <td class='extremeother'> Mongolia </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/oiNvT7gIh5VNmlTr>Lien</a> </td>
+                <td class='extremeother'> Thailand </td>
+                <td class='extremescore'> 2 675 </td>
+                <td class='extremescore'> 1 806 </td>
+                <td class='extremeother'> Indonesia </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/soxSzp4KDdZhLGWY>Lien</a> </td>
+            </tr>
+            <tr>
+                <td> Max Score </td>
+                <td class='extremescore'> 48 388 </td>
+                <td class='extremeother'> Guam </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/bpCQ0RcDRKPXwpP1>Lien</a> </td>
+                <td class='extremeother'> Guam </td>
+                <td class='extremescore'> 24 249 </td>
+                <td class='extremescore'> 24 912 </td>
+                <td class='extremeother'> Andorra </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/3Cc8V8BmHwmv1MPn>Lien</a> </td>
+            </tr>
+            <tr>
+                <td> Min Dist </td>
+                <td class='extremescore'> 1.8 km </td>
+                <td class='extremeother'> Monaco </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/qda6n22upad58g69>Lien</a> </td>
+                <td class='extremeother'> Monaco </td>
+                <td class='extremescore'> 1.7 km </td>
+                <td class='extremescore'> 28.5 m </td>
+                <td class='extremeother'> Monaco </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/qda6n22upad58g69>Lien</a> </td>
+            </tr>
+            <tr>
+                <td> Max Dist </td>
+                <td class='extremescore'> 12 789 km </td>
+                <td class='extremeother'> Brazil </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/eYBSJcqggRbmg3Yn>Lien</a> </td>
+                <td class='extremeother'> United States </td>
+                <td class='extremescore'> 9 702 km </td>
+                <td class='extremescore'> 8 290 km </td>
+                <td class='extremeother'> Brazil </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/EQwEgEgiXkUHFlaj>Lien</a> </td>
+            </tr>
+        </table>
+        <br/>
+        <table>
+            <tr>
+                <th class='upth' colspan='10'> <a href=pagePAYS.html class='slien'> Liste des challenges </a> </th>
+            </tr>
+            <tr>
+                <th class='upth' colspan='10'> <a href=map/mapPAYS.html class='slien'> Carte avec les points </a> </th>
+            </tr>
+            <tr>
+                <th> Config </th>
+                <th class='emptyScore'> Non fait </th>
+                <th class='under2000'> < 2000 </th>
+                <th class='under3500'> < 3500 </th>
+                <th class='under5000'> < 5000 </th>
+                <th class='under6500'> < 6500 </th>
+                <th class='under8000'> < 8000 </th>
+                <th class='under9500'> < 9500 </th>
+                <th class='under10k'> < 10k </th>
+                <th> Total </th>
+            </tr>
+            <tr>
+                <th> Challenge </th>
+                <th> 15 <span class='spanPC'> 14.7% </span> </th>
+                <th> 2 <span class='spanPC'> 2.0% </span> </th>
+                <th> 8 <span class='spanPC'> 7.8% </span> </th>
+                <th> 19 <span class='spanPC'> 18.6% </span> </th>
+                <th> 21 <span class='spanPC'> 20.6% </span> </th>
+                <th> 21 <span class='spanPC'> 20.6% </span> </th>
+                <th> 14 <span class='spanPC'> 13.7% </span> </th>
+                <th> 2 <span class='spanPC'> 2.0% </span> </th>
+                <th> 102 </th>
+            </tr>
+            <tr>
+                <th colspan='10'>
+            <div class="barreChallenges_Pays">
+                </div>
+                </th>
+            </tr>
+            <tr>
+                <th> Round </th>
+                <th> 150 <span class='spanPC'> 14.7% </span> </th>
+                <th> 239 <span class='spanPC'> 23.4% </span> </th>
+                <th> 60 <span class='spanPC'> 5.9% </span> </th>
+                <th> 48 <span class='spanPC'> 4.7% </span> </th>
+                <th> 46 <span class='spanPC'> 4.5% </span> </th>
+                <th> 75 <span class='spanPC'> 7.4% </span> </th>
+                <th> 128 <span class='spanPC'> 12.5% </span> </th>
+                <th> 274 <span class='spanPC'> 26.9% </span> </th>
+                <th> 1020 </th>
+            </tr>
+            <tr>
+                <th colspan='10'>
+            <div class="barreRounds_Pays">
+                </div>
+                </th>
+            </tr>
+        </table>
+        </div>
+    <div class="divDefault">
+        <h2> Challenge : Divers </h2>
+        <table>
+            <tr>
+                <th class='upth' colspan='2'> Résumé </th>
+                <th class='upth'> Duo </th>
+                <th class='upth' colspan='4'> Kirin </th>
+                <th class='upth' colspan='4'> Aexeos </th>
+            </tr>
+            <tr>
+                <th colspan='2'> Config </th>
+                <th> Score </th>
+                <th> Nb </th>
+                <th> Time </th>
+                <th> Dist </th>
+                <th> Score </th>
+                <th> Score </th>
+                <th> Dist </th>
+                <th> Time </th>
+                <th> Nb </th>
+            </tr>
+            <tr>
+                <td> Total </td>
+                <td> 1 </td>
+                <td class='bestscore'> 37 404 </td>
+                <td> 1 </td>
+                <td class='bestother'> 15m 00s </td>
+                <td class='bestother'> 9 737 km </td>
+                <td class='bestscore'> 14 563 </td>
+                <td class='bestscore'> 22 841 </td>
+                <td class='bestother'> 791.7 km </td>
+                <td class='bestother'> 14m 49s </td>
+                <td> 1 </td>
+            </tr>
+            <tr>
+                <td> Challenge </td>
+                <td> 2 </td>
+                <td class='bestscore'> 18 702 </td>
+                <td> 1 </td>
+                <td class='bestother'> 15m 00s </td>
+                <td class='bestother'> 9 737 km </td>
+                <td class='bestscore'> 14 563 </td>
+                <td class='bestscore'> 22 841 </td>
+                <td class='bestother'> 791.7 km </td>
+                <td class='bestother'> 14m 49s </td>
+                <td> 1 </td>
+            </tr>
+            <tr>
+                <td> Round </td>
+                <td> 10 </td>
+                <td class='bestscore'> 3 740 </td>
+                <td> 5 </td>
+                <td class='bestother'>  3m 00s </td>
+                <td class='bestother'> 1 947 km </td>
+                <td class='bestscore'> 2 912 </td>
+                <td class='bestscore'> 4 568 </td>
+                <td class='bestother'> 158.3 km </td>
+                <td class='bestother'>  2m 58s </td>
+                <td> 5 </td>
+            </tr>
+            <tr>
+                <td>   </td>
+                <td> % </td>
+                <td class='bestscore'> 74.8 % </td>
+                <td> % </td>
+                <td class='bestother'> 100.0 % </td>
+                <td class='bestother'>   </td>
+                <td class='bestscore'> 58.3 % </td>
+                <td class='bestscore'> 91.4 % </td>
+                <td class='bestother'>   </td>
+                <td class='bestother'> 98.8 % </td>
+                <td> % </td>
+            </tr>
+        </table>
+        <br/>
+        <table>
+            <tr>
+                <th rowspan="3" class="totduoscore_sur"> 37 404 sur 50 000 <br/> points </th>
+                <th rowspan="2" class="totduoscore_km"> 10 529 km </th>
+                <th class="totduoscore"> 0.26 equateur </th>
+            </tr>
+            <tr>
+                <th class='totduoscore'> 0.03 Terre-Lune </th>
+            </tr>
+            <tr>
+                <th class='totduoscore'> 74.8 %  </th>
+                <th class='totduoscore'> 0.01 % Terre-Soleil </th>
+            </tr>
+        </table>
+        <br/>
+        <table>
+            <tr>
+                <th               class="upth">Extrème</th>
+                <th colspan="2" class="upth">Duo</th>
+                <th colspan="3" class="upth">Kirin</th>
+                <th colspan="3" class="upth">Aexeos</th>
+            </tr>
+            <tr>
+                <th>   </th>
+                <th> Valeur </th>
+                <th> Challenge </th>
+                <th> Lien </th>
+                <th> Challenge </th>
+                <th> Valeur </th>
+                <th> Valeur </th>
+                <th> Challenge </th>
+                <th> Lien </th>
+            </tr>
+            <tr>
+                <td> Min Score </td>
+                <td class='extremescore'> 37 404 </td>
+                <td class='extremeother'> World </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/5ey2cnpOrMFeh8OJ>Lien</a> </td>
+                <td class='extremeother'> World </td>
+                <td class='extremescore'> 14 563 </td>
+                <td class='extremescore'> 22 841 </td>
+                <td class='extremeother'> World </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/1jYKtv7rkmXl5dYR>Lien</a> </td>
+            </tr>
+            <tr>
+                <td> Max Score </td>
+                <td class='extremescore'> 37 404 </td>
+                <td class='extremeother'> World </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/5ey2cnpOrMFeh8OJ>Lien</a> </td>
+                <td class='extremeother'> World </td>
+                <td class='extremescore'> 14 563 </td>
+                <td class='extremescore'> 22 841 </td>
+                <td class='extremeother'> World </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/1jYKtv7rkmXl5dYR>Lien</a> </td>
+            </tr>
+            <tr>
+                <td> Min Dist </td>
+                <td class='extremescore'> 10 529 km </td>
+                <td class='extremeother'> World </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/5ey2cnpOrMFeh8OJ>Lien</a> </td>
+                <td class='extremeother'> World </td>
+                <td class='extremescore'> 9 737 km </td>
+                <td class='extremescore'> 791.7 km </td>
+                <td class='extremeother'> World </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/1jYKtv7rkmXl5dYR>Lien</a> </td>
+            </tr>
+            <tr>
+                <td> Max Dist </td>
+                <td class='extremescore'> 10 529 km </td>
+                <td class='extremeother'> World </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/5ey2cnpOrMFeh8OJ>Lien</a> </td>
+                <td class='extremeother'> World </td>
+                <td class='extremescore'> 9 737 km </td>
+                <td class='extremescore'> 791.7 km </td>
+                <td class='extremeother'> World </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/1jYKtv7rkmXl5dYR>Lien</a> </td>
+            </tr>
+        </table>
+        <br/>
+        <table>
+            <tr>
+                <th class='upth' colspan='10'> <a href=pageDIVERS.html class='slien'> Liste des challenges </a> </th>
+            </tr>
+            <tr>
+                <th class='upth' colspan='10'> <a href=map/mapDIVERS.html class='slien'> Carte avec les points </a> </th>
+            </tr>
+            <tr>
+                <th> Config </th>
+                <th class='emptyScore'> Non fait </th>
+                <th class='under2000'> < 2000 </th>
+                <th class='under3500'> < 3500 </th>
+                <th class='under5000'> < 5000 </th>
+                <th class='under6500'> < 6500 </th>
+                <th class='under8000'> < 8000 </th>
+                <th class='under9500'> < 9500 </th>
+                <th class='under10k'> < 10k </th>
+                <th> Total </th>
+            </tr>
+            <tr>
+                <th> Challenge </th>
+                <th> 7 <span class='spanPC'> 87.5% </span> </th>
+                <th> 0 <span class='spanPC'> 0.0% </span> </th>
+                <th> 0 <span class='spanPC'> 0.0% </span> </th>
+                <th> 0 <span class='spanPC'> 0.0% </span> </th>
+                <th> 0 <span class='spanPC'> 0.0% </span> </th>
+                <th> 1 <span class='spanPC'> 12.5% </span> </th>
+                <th> 0 <span class='spanPC'> 0.0% </span> </th>
+                <th> 0 <span class='spanPC'> 0.0% </span> </th>
+                <th> 8 </th>
+            </tr>
+            <tr>
+                <th colspan='10'>
+            <div class="barreChallenges_Divers">
+                </div>
+                </th>
+            </tr>
+            <tr>
+                <th> Round </th>
+                <th> 70 <span class='spanPC'> 87.5% </span> </th>
+                <th> 1 <span class='spanPC'> 1.2% </span> </th>
+                <th> 1 <span class='spanPC'> 1.2% </span> </th>
+                <th> 0 <span class='spanPC'> 0.0% </span> </th>
+                <th> 1 <span class='spanPC'> 1.2% </span> </th>
+                <th> 1 <span class='spanPC'> 1.2% </span> </th>
+                <th> 1 <span class='spanPC'> 1.2% </span> </th>
+                <th> 5 <span class='spanPC'> 6.2% </span> </th>
+                <th> 80 </th>
+            </tr>
+            <tr>
+                <th colspan='10'>
+            <div class="barreRounds_Divers">
+                </div>
+                </th>
+            </tr>
+        </table>
+        </div>
+    <div class="divTitle">
+        <h2> <a href=pageGRAPH.html > Page des graphiques... </a> </h2>
+        </div>
+    <div class="divDefault">
+        <h2> Challenge : All </h2>
+        <table>
+            <tr>
+                <th class='upth' colspan='2'> Résumé </th>
+                <th class='upth'> Duo </th>
+                <th class='upth' colspan='4'> Kirin </th>
+                <th class='upth' colspan='4'> Aexeos </th>
+            </tr>
+            <tr>
+                <th colspan='2'> Config </th>
+                <th> Score </th>
+                <th> Nb </th>
+                <th> Time </th>
+                <th> Dist </th>
+                <th> Score </th>
+                <th> Score </th>
+                <th> Dist </th>
+                <th> Time </th>
+                <th> Nb </th>
+            </tr>
+            <tr>
+                <td> Total </td>
+                <td> 1 </td>
+                <td class='bestscore'> 2 806 428 </td>
+                <td> 1 </td>
+                <td class='bestother'> 30h 35m 14s </td>
+                <td class='bestother'> 143 826 km </td>
+                <td class='bestscore'> 1 200 175 </td>
+                <td class='bestscore'> 1 606 253 </td>
+                <td class='bestother'> 190 801 km </td>
+                <td class='bestother'> 31h 53m 17s </td>
+                <td> 1 </td>
+            </tr>
+            <tr>
+                <td> Challenge </td>
+                <td> 189 </td>
+                <td class='bestscore'> 14 848 </td>
+                <td> 90 </td>
+                <td class='bestother'> 20m 23s </td>
+                <td class='bestother'> 1 598 km </td>
+                <td class='bestscore'> 13 335 </td>
+                <td class='bestscore'> 16 224 </td>
+                <td class='bestother'> 1 927 km </td>
+                <td class='bestother'> 19m 20s </td>
+                <td> 99 </td>
+            </tr>
+            <tr>
+                <td> Round </td>
+                <td> 945 </td>
+                <td class='bestscore'> 2 969 </td>
+                <td> 450 </td>
+                <td class='bestother'>  4m 05s </td>
+                <td class='bestother'> 319.6 km </td>
+                <td class='bestscore'> 2 667 </td>
+                <td class='bestscore'> 3 244 </td>
+                <td class='bestother'> 385.5 km </td>
+                <td class='bestother'>  3m 52s </td>
+                <td> 495 </td>
+            </tr>
+            <tr>
+                <td>   </td>
+                <td> % </td>
+                <td class='bestscore'> 59.4 % </td>
+                <td> % </td>
+                <td class='bestother'> 94.6 % </td>
+                <td class='bestother'>   </td>
+                <td class='bestscore'> 53.3 % </td>
+                <td class='bestscore'> 64.9 % </td>
+                <td class='bestother'>   </td>
+                <td class='bestother'> 92.2 % </td>
+                <td> % </td>
+            </tr>
+        </table>
+        <br/>
+        <table>
+            <tr>
+                <th rowspan="3" class="totduoscore_sur"> 2 806 428 sur 4 725 000 <br/> points </th>
+                <th rowspan="2" class="totduoscore_km"> 334 628 km </th>
+                <th class="totduoscore"> 8.35 equateur </th>
+            </tr>
+            <tr>
+                <th class='totduoscore'> 0.87 Terre-Lune </th>
+            </tr>
+            <tr>
+                <th class='totduoscore'> 59.4 %  </th>
+                <th class='totduoscore'> 0.22 % Terre-Soleil </th>
+            </tr>
+        </table>
+        <br/>
+        <table>
+            <tr>
+                <th               class="upth">Extrème</th>
+                <th colspan="2" class="upth">Duo</th>
+                <th colspan="3" class="upth">Kirin</th>
+                <th colspan="3" class="upth">Aexeos</th>
+            </tr>
+            <tr>
+                <th>   </th>
+                <th> Valeur </th>
+                <th> Challenge </th>
+                <th> Lien </th>
+                <th> Challenge </th>
+                <th> Valeur </th>
+                <th> Valeur </th>
+                <th> Challenge </th>
+                <th> Lien </th>
+            </tr>
+            <tr>
+                <td> Min Score </td>
+                <td class='extremescore'> 8 488 </td>
+                <td class='extremeother'> Mongolia </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/oiNvT7gIh5VNmlTr>Lien</a> </td>
+                <td class='extremeother'> Thailand </td>
+                <td class='extremescore'> 2 675 </td>
+                <td class='extremescore'> 1 806 </td>
+                <td class='extremeother'> Indonesia </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/soxSzp4KDdZhLGWY>Lien</a> </td>
+            </tr>
+            <tr>
+                <td> Max Score </td>
+                <td class='extremescore'> 48 388 </td>
+                <td class='extremeother'> Guam </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/bpCQ0RcDRKPXwpP1>Lien</a> </td>
+                <td class='extremeother'> Guam </td>
+                <td class='extremescore'> 24 249 </td>
+                <td class='extremescore'> 24 912 </td>
+                <td class='extremeother'> Andorra </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/3Cc8V8BmHwmv1MPn>Lien</a> </td>
+            </tr>
+            <tr>
+                <td> Min Dist </td>
+                <td class='extremescore'> 1.8 km </td>
+                <td class='extremeother'> Monaco </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/qda6n22upad58g69>Lien</a> </td>
+                <td class='extremeother'> Monaco </td>
+                <td class='extremescore'> 1.7 km </td>
+                <td class='extremescore'> 28.5 m </td>
+                <td class='extremeother'> Monaco </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/qda6n22upad58g69>Lien</a> </td>
+            </tr>
+            <tr>
+                <td> Max Dist </td>
+                <td class='extremescore'> 27 991 km </td>
+                <td class='extremeother'> World </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/vum3OvIAL9oDiusF>Lien</a> </td>
+                <td class='extremeother'> World </td>
+                <td class='extremescore'> 22 144 km </td>
+                <td class='extremescore'> 40 323 km </td>
+                <td class='extremeother'> Extraordinary World </td>
+                <td class='extremeother'> <a href=https://www.geoguessr.com/results/SLN65ZfJVS9ABCTJ>Lien</a> </td>
+            </tr>
+        </table>
+        <br/>
+        <table>
+            <tr>
+                <th class='upth' colspan='10'> <a href=pageALL.html class='slien'> Liste des challenges </a> </th>
+            </tr>
+            <tr>
+                <th class='upth' colspan='10'> <a href=map/mapALL.html class='slien'> Carte avec les points </a> </th>
+            </tr>
+        </table>
+        </div>
+</body>
 </html>

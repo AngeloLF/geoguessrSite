@@ -1,0 +1,55 @@
+
+/* Les unders :  */
+
+.under2000 {
+    background-color: #505050;
+    font-weight: bold;
+}
+
+.under3500 {
+    background-color: #990000;
+    font-weight: bold;
+}
+
+.under5000 {
+    background-color: #FF0000;
+    font-weight: bold;
+}
+
+.under6500 {
+    background-color: orange;
+    font-weight: bold;
+}
+
+.under8000 {
+    background-color: lightgreen;
+    font-weight: bold;
+}
+
+.under9500 {
+    background-color: green;
+    font-weight: bold;
+}
+
+.under10k {
+    background-color: #0080FF;
+    font-weight: bold;
+}
+
+
+/* Les empty :  */
+
+.emptyScore {
+    background-color: #404040;
+}
+
+.emptyPays {
+    background-color: #707070;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.empty {
+    background-color: #707070;
+}
+

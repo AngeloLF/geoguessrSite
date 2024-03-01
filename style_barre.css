@@ -1,0 +1,74 @@
+.barreChallenges_Pays {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to right,
+        #000000 0.00%,
+        #000000 14.70%,
+        #505050 14.71%,
+        #505050 16.66%,
+        #990000 16.67%,
+        #990000 24.50%,
+        #FF0000 24.51%,
+        #FF0000 43.13%,
+        orange 43.14%,
+        orange 63.72%,
+        lightgreen 63.73%,
+        lightgreen 84.30%,
+        green 84.31%,
+        green 98.03%,
+        #0080FF 98.04%,
+        #0080FF 100%);
+}
+
+.barreRounds_Pays {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to right,
+        #000000 0.00%,
+        #000000 14.70%,
+        #505050 14.71%,
+        #505050 38.13%,
+        #990000 38.14%,
+        #990000 44.01%,
+        #FF0000 44.02%,
+        #FF0000 48.72%,
+        orange 48.73%,
+        orange 53.23%,
+        lightgreen 53.24%,
+        lightgreen 60.58%,
+        green 60.59%,
+        green 73.13%,
+        #0080FF 73.14%,
+        #0080FF 100%);
+}
+
+.barreChallenges_Divers {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to right,
+        #000000 0.00%,
+        #000000 87.49%,
+        lightgreen 87.50%,
+        lightgreen 100%);
+}
+
+.barreRounds_Divers {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to right,
+        #000000 0.00%,
+        #000000 87.49%,
+        #505050 87.50%,
+        #505050 88.74%,
+        #990000 88.75%,
+        #990000 89.99%,
+        orange 90.00%,
+        orange 91.24%,
+        lightgreen 91.25%,
+        lightgreen 92.49%,
+        green 92.50%,
+        green 93.74%,
+        #0080FF 93.75%,
+        #0080FF 100%);
+}
+
